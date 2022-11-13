@@ -19,26 +19,35 @@ const Body = () => {
     return ( 
         <div className="body">
             
-            <p>How well do you know your revomon?</p>
-            <h2>Choose your Revomon</h2>
+            <h2 style={{
+                marginTop:'40px'
+            }}>How well do you know your revomon?</h2>
+            <h1 style={{
+                marginTop:'40px',
+                color:'yellow',
+                textShadow:'red 1px 2px',
+                
+            }}>Choose your Revomon</h1>
             <div className="main">
                 
 
-                <div className="revomonContainer">
+                    <div className="revomonContainer">
 
-                <Link to='./Dominevo'><img src={Dominevo} className="RevomonIcons" alt="logo" /></Link>
-                <Link to='./Romanfrig'><img src={Romanfrig} className="RevomonIcons" alt="logo" /></Link>
-                <Link to='./Khepreetle'><img src={Khepreetle} className="RevomonIcons" alt="logo" /></Link>
-                <Link to='./Meganeudra'><img src={Meganeudra} className="RevomonIcons" alt="logo" /></Link>
-                <Link to='./Monking'><img src={Monking} className="RevomonIcons" alt="logo" /></Link>
-                <Link to='./Craggon'><img src={Craggon} className="RevomonIcons" alt="logo" /></Link>
-                <Link to='./Opawan'><img src={Opawan} className="RevomonIcons" alt="logo" /></Link>
-                <Link to='./Polluvern'><img src={Polluvern} className="RevomonIcons" alt="logo" /></Link>
-                <Link to='./Raival'><img src={Raival} className="RevomonIcons" alt="logo" /></Link>
-                <Link to='./Skadire'><img src={Skadire} className="RevomonIcons" alt="logo" /></Link>
-                <Link to='./Soarnox'><img src={Soarnox} className="RevomonIcons" alt="logo" /></Link>
-                <Link to='./Triplydra'><img src={Triplydra} className="RevomonIcons" alt="logo" /></Link>
-                </div>
+                        <Link to='./Dominevo'><img src={Dominevo} className="RevomonIcons" alt="logo" /></Link>
+                        <Link to='./Romanfrig'><img src={Romanfrig} className="RevomonIcons" alt="logo" /></Link>
+                        <Link to='./Khepreetle'><img src={Khepreetle} className="RevomonIcons" alt="logo" /></Link>
+                        <Link to='./Meganeudra'><img src={Meganeudra} className="RevomonIcons" alt="logo" /></Link>
+                        <Link to='./Monking'><img src={Monking} className="RevomonIcons" alt="logo" /></Link>
+                        <Link to='./Craggon'><img src={Craggon} className="RevomonIcons" alt="logo" /></Link>
+                        <Link to='./Opawan'><img src={Opawan} className="RevomonIcons" alt="logo" /></Link>
+                        <Link to='./Polluvern'><img src={Polluvern} className="RevomonIcons" alt="logo" /></Link>
+                        <Link to='./Raival'><img src={Raival} className="RevomonIcons" alt="logo" /></Link>
+                        <Link to='./Skadire'><img src={Skadire} className="RevomonIcons" alt="logo" /></Link>
+                        <Link to='./Soarnox'><img src={Soarnox} className="RevomonIcons" alt="logo" /></Link>
+                        <Link to='./Triplydra'><img src={Triplydra} className="RevomonIcons" alt="logo" /></Link>
+                    </div>
+
+
 
 
 

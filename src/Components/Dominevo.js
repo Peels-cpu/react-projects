@@ -194,26 +194,26 @@ const DominevoQuiz = () => {
             backgroundColor: 'black',
             fontSize: '17px',
             borderRadius: '10%',
-            marginTop:'90px'
+            marginTop:'50px'
         }} className='body'><h2 >'You finished the quiz! your Score is {score} correct out of {Questions.length} Questions.'</h2><h1 style={{
             color: 'white',
             backgroundColor: 'black',
             fontSize: '30px',
             borderRadius: '10%',
-            marginTop:'90px'
+            marginTop:'50px'
         }}>Your level of Knowledge about Dominevo is  {knowledge}</h1>
         <img src="https://nft.revomon.io/image/raw/revomon/196_shiny.png" className="Revomons" alt="logo" />
         
         <Link to='/'>
-                        <button
-                        style={{
-                            color: 'white',
-                            background: 'linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))',
-                            fontSize: '25px',
-                            borderRadius: '10%',
-                            marginTop:'90px'
-                        }}className='Btn'>Battle Different Revo</button>
-                    </Link>
+            <button
+            style={{
+                color: 'white',
+                background: 'linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))',
+                fontSize: '25px',
+                borderRadius: '10%',
+                marginTop:'50px'
+            }}className='Btn'>Battle Different Revo</button>
+        </Link>
         
         </div>
     };
@@ -225,7 +225,7 @@ const DominevoQuiz = () => {
             <div className="">
                <img src="https://nft.revomon.io/image/raw/revomon/196_shiny.png" className="Revomons" alt="logo" /> 
             </div>
-
+            
             <div className="QuizPage">
                 {/* Questions */}
                 
@@ -257,7 +257,8 @@ const DominevoQuiz = () => {
                     fontSize: '25px',
                     // padding: '10px 20px',
                     // margin: '20px',
-                    borderRadius: '10%'
+                    borderRadius: '10%',
+                    marginTop:'50px'
                 }}className='Btn'>Battle Different Revo</button>
             </Link>
             </div>

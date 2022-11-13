@@ -189,13 +189,13 @@ const SkadireQuiz = () => {
                 backgroundColor: 'black',
                 fontSize: '17px',
                 borderRadius: '10%',
-                marginTop:'70px'
+                marginTop:'50px'
             }} className='body'><h2 >'You finished the quiz! your Score is {score} correct out of {Questions.length} Questions.'</h2><h1 style={{
                 color: 'white',
                 backgroundColor: 'black',
                 fontSize: '30px',
                 borderRadius: '10%',
-                marginTop:'70px'
+                marginTop:'50px'
             }}>Your level of Knowledge about Skadire is   {knowledge}</h1>
             <img src="https://nft.revomon.io/image/raw/revomon/461_shiny.png" className="Revomons" alt="logo" /> 
             <Link to='/'>
@@ -205,7 +205,7 @@ const SkadireQuiz = () => {
                     background: 'linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))',
                     fontSize: '25px',
                     borderRadius: '10%',
-                    marginTop:'90px'
+                    marginTop:'50px'
                 }}className='Btn'>Battle Different Revo</button>
             </Link>
             
@@ -215,8 +215,8 @@ const SkadireQuiz = () => {
     return ( 
         <div className="body">
             
-            <h2 style={{margin:'20px'}}>VS Skadire</h2>
-            <div className="main">
+            <h2 style={{margin:'20px'}}>Skadire</h2>
+            <div >
                <img src="https://nft.revomon.io/image/raw/revomon/461_shiny.png" className="Revomons" alt="logo" /> 
                
             </div>
@@ -257,7 +257,7 @@ const SkadireQuiz = () => {
                         background: 'linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))',
                         fontSize: '25px',
                         borderRadius: '10%',
-                        marginTop:'90px'
+                        marginTop:'50px'
                     }}className='Btn'>Battle Different Revo</button>
                 </Link>
                 </div>

@@ -63,10 +63,10 @@ const SoarnoxQuiz = () => {
         {
             questionText: 'What does my ability Serene Grace do?',
             answerOptions:[
-                { answerText: 'It allows me to fly to be immune to ground type moves', isCorrect: false },
+                { answerText: 'Makes me immune to ground type moves', isCorrect: false },
                 { answerText: 'Doubles the chance of secondary effects from happening', isCorrect: true },
-                { answerText: 'It makes revomon paralize when I hit then with a move', isCorrect: false },
-                { answerText: 'It makes revomon Flinch when I attack then', isCorrect: false },
+                { answerText: 'It makes revomon paralized when I hit then with a move', isCorrect: false },
+                { answerText: 'It makes revomon Flinch when I attack them', isCorrect: false },
             ],
         },
         {
@@ -189,13 +189,13 @@ const SoarnoxQuiz = () => {
                 backgroundColor: 'black',
                 fontSize: '17px',
                 borderRadius: '10%',
-                marginTop:'70px'
+                marginTop:'50px'
             }} className='body'><h2 >'You finished the quiz! your Score is {score} correct out of {Questions.length} Questions.'</h2><h1 style={{
                 color: 'white',
                 backgroundColor: 'black',
                 fontSize: '30px',
                 borderRadius: '10%',
-                marginTop:'70px'
+                marginTop:'50px'
             }}>Your level of Knowledge about Sornox is   {knowledge}</h1>
             <img src="https://nft.revomon.io/image/raw/revomon/468_shiny.png" className="Revomons" alt="logo" />  
             <Link to='/'>
@@ -205,7 +205,7 @@ const SoarnoxQuiz = () => {
                     background: 'linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))',
                     fontSize: '25px',
                     borderRadius: '10%',
-                    marginTop:'90px'
+                    marginTop:'50px'
                 }}className='Btn'>Battle Different Revo</button>
             </Link>
             
@@ -215,8 +215,8 @@ const SoarnoxQuiz = () => {
     return ( 
         <div className="body">
             
-            <h2 style={{margin:'20px'}}>VS Soarnox</h2>
-            <div className="main">
+            <h2 style={{margin:'20px'}}>Soarnox</h2>
+            <div >
                <img src="https://nft.revomon.io/image/raw/revomon/468_shiny.png" className="Revomons" alt="logo" /> 
                
             </div>
@@ -256,7 +256,7 @@ const SoarnoxQuiz = () => {
                         background: 'linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))',
                         fontSize: '25px',
                         borderRadius: '10%',
-                        marginTop:'90px'
+                        marginTop:'50px'
                     }}className='Btn'>Battle Different Revo</button>
                 </Link>
                 </div>

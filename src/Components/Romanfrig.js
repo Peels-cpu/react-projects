@@ -216,8 +216,8 @@ const RomanfrigQuiz = () => {
     return ( 
         <div className="body">
             
-            <h2 style={{margin:'20px'}}>VS Romanfrig</h2>
-            <div className="main">
+            <h2 style={{margin:'20px'}}>Romanfrig</h2>
+            <div >
                <img src='https://nft.revomon.io/image/raw/revomon/398_shiny.png' className="Revomons" alt="logo" /> 
                
             </div>
@@ -258,7 +258,8 @@ const RomanfrigQuiz = () => {
                             fontSize: '25px',
                             // padding: '10px 20px',
                             // margin: '20px',
-                            borderRadius: '10%'
+                            borderRadius: '10%',
+                            marginTop:'50px'
                         }}className='Btn'>Battle Different Revo</button>
                     </Link>
                 </div>
