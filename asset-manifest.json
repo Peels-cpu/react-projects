@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/http//peels-cpu.github.io/react-projects/static/css/main.11892e60.css",
-    "main.js": "/http//peels-cpu.github.io/react-projects/static/js/main.a6733926.js",
-    "static/js/787.d879e19b.chunk.js": "/http//peels-cpu.github.io/react-projects/static/js/787.d879e19b.chunk.js",
-    "static/media/Counterdexlogo.png": "/http//peels-cpu.github.io/react-projects/static/media/Counterdexlogo.9af7e5968ec93e83779d.png",
-    "static/media/craggon.png": "/http//peels-cpu.github.io/react-projects/static/media/craggon.8b81d38b3bbd7a4965d9.png",
-    "static/media/triplydra.png": "/http//peels-cpu.github.io/react-projects/static/media/triplydra.6f0b55a646539523a9f7.png",
-    "static/media/polluvern.png": "/http//peels-cpu.github.io/react-projects/static/media/polluvern.2b41cd38d422b0d2b4be.png",
-    "static/media/monking.png": "/http//peels-cpu.github.io/react-projects/static/media/monking.9a9efeca2eed4218b6a6.png",
-    "static/media/khepreetle.png": "/http//peels-cpu.github.io/react-projects/static/media/khepreetle.d22cd677023ee57fb7a2.png",
-    "static/media/skadire.png": "/http//peels-cpu.github.io/react-projects/static/media/skadire.38548d6fdfd1824d33d2.png",
-    "static/media/soarnox.png": "/http//peels-cpu.github.io/react-projects/static/media/soarnox.ed26e4c1e67404b84574.png",
-    "static/media/opawan.png": "/http//peels-cpu.github.io/react-projects/static/media/opawan.5a633ef2cdb89a8fb688.png",
-    "static/media/dominevo.png": "/http//peels-cpu.github.io/react-projects/static/media/dominevo.ffd78e66350a551d0944.png",
-    "static/media/meganeudra.png": "/http//peels-cpu.github.io/react-projects/static/media/meganeudra.59e986b17abf02f13076.png",
-    "static/media/raival.png": "/http//peels-cpu.github.io/react-projects/static/media/raival.a0647fe179f8db3d2002.png",
-    "static/media/romanfrig.png": "/http//peels-cpu.github.io/react-projects/static/media/romanfrig.dbce3c99db5d050f26ba.png",
-    "static/media/logo.svg": "/http//peels-cpu.github.io/react-projects/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/http//peels-cpu.github.io/react-projects/index.html",
-    "main.11892e60.css.map": "/http//peels-cpu.github.io/react-projects/static/css/main.11892e60.css.map",
-    "main.a6733926.js.map": "/http//peels-cpu.github.io/react-projects/static/js/main.a6733926.js.map",
-    "787.d879e19b.chunk.js.map": "/http//peels-cpu.github.io/react-projects/static/js/787.d879e19b.chunk.js.map"
+    "main.css": "/react-projects/static/css/main.11892e60.css",
+    "main.js": "/react-projects/static/js/main.34e1fac5.js",
+    "static/js/787.d879e19b.chunk.js": "/react-projects/static/js/787.d879e19b.chunk.js",
+    "static/media/Counterdexlogo.png": "/react-projects/static/media/Counterdexlogo.9af7e5968ec93e83779d.png",
+    "static/media/craggon.png": "/react-projects/static/media/craggon.8b81d38b3bbd7a4965d9.png",
+    "static/media/triplydra.png": "/react-projects/static/media/triplydra.6f0b55a646539523a9f7.png",
+    "static/media/polluvern.png": "/react-projects/static/media/polluvern.2b41cd38d422b0d2b4be.png",
+    "static/media/monking.png": "/react-projects/static/media/monking.9a9efeca2eed4218b6a6.png",
+    "static/media/khepreetle.png": "/react-projects/static/media/khepreetle.d22cd677023ee57fb7a2.png",
+    "static/media/skadire.png": "/react-projects/static/media/skadire.38548d6fdfd1824d33d2.png",
+    "static/media/soarnox.png": "/react-projects/static/media/soarnox.ed26e4c1e67404b84574.png",
+    "static/media/opawan.png": "/react-projects/static/media/opawan.5a633ef2cdb89a8fb688.png",
+    "static/media/dominevo.png": "/react-projects/static/media/dominevo.ffd78e66350a551d0944.png",
+    "static/media/meganeudra.png": "/react-projects/static/media/meganeudra.59e986b17abf02f13076.png",
+    "static/media/raival.png": "/react-projects/static/media/raival.a0647fe179f8db3d2002.png",
+    "static/media/romanfrig.png": "/react-projects/static/media/romanfrig.dbce3c99db5d050f26ba.png",
+    "static/media/logo.svg": "/react-projects/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react-projects/index.html",
+    "main.11892e60.css.map": "/react-projects/static/css/main.11892e60.css.map",
+    "main.34e1fac5.js.map": "/react-projects/static/js/main.34e1fac5.js.map",
+    "787.d879e19b.chunk.js.map": "/react-projects/static/js/787.d879e19b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.11892e60.css",
-    "static/js/main.a6733926.js"
+    "static/js/main.34e1fac5.js"
   ]
 }
