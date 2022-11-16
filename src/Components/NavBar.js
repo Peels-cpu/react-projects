@@ -11,14 +11,17 @@ function BasicExample() {
       <Container >
       <Nav.Link style={{color: '#003cff'}}  className="links" href="https://counterdex.com/" target="_blank"><img src={logo2} className="logo" alt="logo" /></Nav.Link>
       
-        <Link className='NoUnderline ' to="/"><h1>RevoTrivia</h1></Link>
+        <Link className='NoUnderline ' to="/react-projects/"><h1>RevoTrivia</h1></Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className='hamburgerMenu'/>
         <Navbar.Collapse  id="basic-navbar-nav">
           <Nav  >
-            <Nav.Link style={{color: '#003cff', marginTop:'20px'}}  className="links" href="https://counterdex.com/" target="_blank">CounterDex</Nav.Link>
-            <Nav.Link  style={{color: '#003cff'}} className="links" href="https://counterdex.com/Calculators.html" target="_blank">Valulator</Nav.Link>
-            <Nav.Link style={{color: '#003cff'}}  className="links" href="https://counterdex.com/info.html" target="_blank">Information</Nav.Link>
-            <NavDropdown style={{color: '#003cff'}} title="Group Links" id="basic-nav-dropdown">
+            <Nav.Link style={{color: 'teal', marginTop:'20px'}}  className="links" href="https://counterdex.com/" target="_blank">CounterDex</Nav.Link>
+            <hr></hr>
+            <Nav.Link  style={{color: 'teal'}} className="links" href="https://counterdex.com/Calculators.html" target="_blank">Valulator</Nav.Link>
+            <hr></hr>
+            <Nav.Link style={{color: 'teal'}}  className="links" href="https://counterdex.com/info.html" target="_blank">Information</Nav.Link>
+            <hr></hr>
+            <NavDropdown style={{color: 'teal'}} title="Group Links" id="basic-nav-dropdown">
               <NavDropdown.Item href="https://discord.com/channels/939520368673165312/939520368673165315" target="_blank">Revo League Discord</NavDropdown.Item>
               <NavDropdown.Item href="https://discord.com/channels/670597253764874270/822022281948823552" target="_blank">
                 Revomon Offical Discord

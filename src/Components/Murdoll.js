@@ -4,98 +4,98 @@ import { Link } from 'react-router-dom';
 
 
 
-const DominevoQuiz = () => {
+const MurdollQuiz = () => {
 
 
     const Questions = [
     {
-        questionText: 'What town Can you catch me at and what time of the day?',
+        questionText: 'From what date can you catch me and what town?',
         answerOptions:[
-            { answerText: 'Cinvia at Night', isCorrect: false },
-            { answerText: 'Kadric at night', isCorrect: false },
-            { answerText: 'Marquis at Afternoon', isCorrect: false },
-            { answerText: 'Kadric at Morning', isCorrect: true },
+            { answerText: 'Cinvia until December 1st', isCorrect: false },
+            { answerText: 'Kadric until December 1st', isCorrect: false },
+            { answerText: 'Marquis until December 1st', isCorrect: false },
+            { answerText: 'Sakura  until December 1st', isCorrect: true },
         ],
     },
     {
         questionText: 'What revomon is your best option to fight me??',
         answerOptions:[
-            { answerText: 'Opawan', isCorrect: true },
-            { answerText: 'Azuroon', isCorrect: false },
+            { answerText: 'Opawan', isCorrect: false },
+            { answerText: 'Romanfrig', isCorrect: true },
             { answerText: 'Nightmort', isCorrect: false },
             { answerText: 'Blizzora', isCorrect: false },
         ],
     },
     {
-        questionText: 'Which one is my ability?',
+        questionText: 'Which ones are my abilities?',
         answerOptions:[
-            { answerText: 'Pressure', isCorrect: false },
-            { answerText: 'Shadow Tag', isCorrect: false },
-            { answerText: 'Dark aura', isCorrect: false },
-            { answerText: 'Magic Bounce', isCorrect: true },
+            { answerText: 'Natural cure | Pressure', isCorrect: false },
+            { answerText: 'Friend Guard  | Shadow Tag', isCorrect: false },
+            { answerText: 'Dark aura | Serene Grce', isCorrect: false },
+            { answerText: 'Disiguise', isCorrect: true },
         ],
     },
     {
-        questionText: 'What nature is best for me?',
+        questionText: 'What does my ability do?',
         answerOptions:[
-            { answerText: 'Jolly', isCorrect: false },
-            { answerText: 'Modest', isCorrect: false },
-            { answerText: 'Timid', isCorrect: true },
-            { answerText: 'Adamant', isCorrect: false },
+            { answerText: 'Phantom types cant hurt me', isCorrect: false },
+            { answerText: 'Neutral type moves cant hurt me', isCorrect: false },
+            { answerText: 'Makes me immune from the first attack that hits me', isCorrect: true },
+            { answerText: 'Makes me unkillable', isCorrect: false },
         ],
     },
     {
-        questionText: 'Who owns the only shiny dominevo?',
+        questionText: 'What priority move can I use?',
         answerOptions:[
-            { answerText: 'Peels', isCorrect: false },
-            { answerText: 'SappDaddy', isCorrect: true },
-            { answerText: 'TheNamezAnthony', isCorrect: false },
-            { answerText: 'AmazaraJC', isCorrect: false },
+            { answerText: 'Quick attack', isCorrect: false },
+            { answerText: 'Shadow sneak', isCorrect: true },
+            { answerText: 'Aqua jet', isCorrect: false },
+            { answerText: 'Extreme Speed', isCorrect: false },
         ],
     },
     {
         questionText: 'What Move Hurts me the most?',
         answerOptions:[
-            { answerText: 'X-sizzors', isCorrect: true },
-            { answerText: 'Shadow Sneak', isCorrect: false },
-            { answerText: 'Flamethrower', isCorrect: false },
-            { answerText: 'Shadowball', isCorrect: false },
+            { answerText: 'Brick Break', isCorrect: false },
+            { answerText: 'Shadow claw', isCorrect: true },
+            { answerText: 'Sucker punch', isCorrect: false },
+            { answerText: 'Dazzling gleam', isCorrect: false },
         ],
     },
     {
         questionText: 'What type of attack(s) hurts me the most?',
         answerOptions:[
-            { answerText: 'Phantom/Fire/Earth', isCorrect: false },
-            { answerText: 'Bug/Water/Farts', isCorrect: false },
-            { answerText: 'Phantom/Bug/Twilight', isCorrect: true },
-            { answerText: 'Twilight/Battle', isCorrect: false },
+            { answerText: 'Phantom | Metal', isCorrect: true },
+            { answerText: 'Phantom | Toxic', isCorrect: false },
+            { answerText: 'Battle | Spirit', isCorrect: false },
+            { answerText: 'Twilight | Battle', isCorrect: false },
         ],
     },
     {
-        questionText: 'Which move can I bounce back with my ability?',
+        questionText: 'What seasonal event can you catch me at?',
         answerOptions:[
-            { answerText: 'Phantom Type moves', isCorrect: false },
-            { answerText: 'Time Type moves', isCorrect: false },
-            { answerText: 'Priority Moves', isCorrect: false },
-            { answerText: 'Status moves/Stealth rock', isCorrect: true },
+            { answerText: 'Thanks Giving Event', isCorrect: false },
+            { answerText: 'Spring Event', isCorrect: false },
+            { answerText: 'Winter Event', isCorrect: false },
+            { answerText: 'Holloween Event', isCorrect: true },
         ],
     },
     {
-        questionText: 'What revomon did i evolve from?',
+        questionText: 'What revomon did I Previously evolve from?',
         answerOptions:[
-            { answerText: 'Loftevo', isCorrect: false },
+            { answerText: 'Fawneel', isCorrect: false },
             { answerText: 'None', isCorrect: true },
-            { answerText: 'Hauntevo', isCorrect: false },
-            { answerText: 'Drakevo', isCorrect: false },
+            { answerText: 'Mummole', isCorrect: false },
+            { answerText: 'Wolpan', isCorrect: false },
         ],
     },
     {
         questionText: 'What are my highest stats?',
         answerOptions:[
-            { answerText: 'SpDef/Atk', isCorrect: false },
-            { answerText: 'SpAtk/HP', isCorrect: false },
-            { answerText: 'Speed/SpAtk', isCorrect: true },
-            { answerText: 'SpD/Def', isCorrect: false },
+            { answerText: 'Sp.Def | Atk', isCorrect: false },
+            { answerText: 'Sp.Def | HP', isCorrect: false },
+            { answerText: 'Speed | Atk', isCorrect: false },
+            { answerText: 'Sp.Def | Speed', isCorrect: true },
         ],
     },
     
@@ -232,8 +232,8 @@ const DominevoQuiz = () => {
             fontSize: '30px',
             borderRadius: '10%',
             marginTop:'50px'
-        }}>Your level of Knowledge about Dominevo is  {knowledge}</h1>
-        <img src="https://nft.revomon.io/image/raw/revomon/196_shiny.png" className="Revomons" alt="logo" />
+        }}>Your level of Knowledge about Murdoll is  {knowledge}</h1>
+        <img src="https://nft.revomon.io/image/raw/revomon/778_shiny.png" className="Revomons" alt="logo" />
         
         <Link to='/react-projects/'>
             <button
@@ -252,9 +252,9 @@ const DominevoQuiz = () => {
     return ( 
         <div className="body">
             
-            <h2 style={{marginTop:'20px'}}>Dominevo</h2>
+            <h2 style={{marginTop:'20px'}}>Murdoll</h2>
             <div className="">
-               <img src="https://nft.revomon.io/image/raw/revomon/196_shiny.png" className="Revomons" alt="logo" /> 
+               <img src="https://nft.revomon.io/image/raw/revomon/778_shiny.png" className="Revomons" alt="logo" /> 
             </div>
 
             <div className="QuizPage">
@@ -306,4 +306,4 @@ const DominevoQuiz = () => {
      );
 }
  
-export default DominevoQuiz;
+export default MurdollQuiz;

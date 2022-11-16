@@ -4,100 +4,101 @@ import { Link } from 'react-router-dom';
 
 
 
-const DominevoQuiz = () => {
+const RaftnesseQuiz = () => {
 
 
     const Questions = [
+        {
+            questionText: 'What move can I use to heal status conditions?',
+            answerOptions:[
+                { answerText: 'Heal Pulse', isCorrect: false },
+                { answerText: 'Refresh', isCorrect: true },
+                { answerText: 'Recover', isCorrect: false },
+                { answerText: 'Heal Bell', isCorrect: false },
+            ],
+        },
+        {
+            questionText: 'What revomon did I Previously evolve from?',
+            answerOptions:[
+                { answerText: 'Yelloon', isCorrect: false },
+                { answerText: 'Bluebaloon', isCorrect: false },
+                { answerText: 'Raftloon', isCorrect: false },
+                { answerText: 'Flotiloc', isCorrect: true },
+            ],
+        },
+        {
+            questionText: 'What are my highest stats?',
+            answerOptions:[
+                { answerText: 'Sp.Def | Atk', isCorrect: false },
+                { answerText: 'Sp.Def | Sp.Atk', isCorrect: true },
+                { answerText: 'Speed | Sp.Atk', isCorrect: false },
+                { answerText: 'Sp.Def | Def', isCorrect: false },
+            ],
+        },
     {
         questionText: 'What town Can you catch me at and what time of the day?',
         answerOptions:[
-            { answerText: 'Cinvia at Night', isCorrect: false },
-            { answerText: 'Kadric at night', isCorrect: false },
+            { answerText: 'Im a Winter event revomon', isCorrect: false },
+            { answerText: 'Kadric at all Day', isCorrect: false },
             { answerText: 'Marquis at Afternoon', isCorrect: false },
-            { answerText: 'Kadric at Morning', isCorrect: true },
+            { answerText: 'You gota hatch me!...mom', isCorrect: true },
         ],
     },
     {
         questionText: 'What revomon is your best option to fight me??',
         answerOptions:[
-            { answerText: 'Opawan', isCorrect: true },
-            { answerText: 'Azuroon', isCorrect: false },
-            { answerText: 'Nightmort', isCorrect: false },
-            { answerText: 'Blizzora', isCorrect: false },
+            { answerText: 'Tidju', isCorrect: false },
+            { answerText: 'Atolloise', isCorrect: true },
+            { answerText: 'Craggon', isCorrect: false },
+            { answerText: 'Polluvern', isCorrect: false },
         ],
     },
     {
-        questionText: 'Which one is my ability?',
+        questionText: 'Which ones are my abilities?',
         answerOptions:[
-            { answerText: 'Pressure', isCorrect: false },
-            { answerText: 'Shadow Tag', isCorrect: false },
-            { answerText: 'Dark aura', isCorrect: false },
-            { answerText: 'Magic Bounce', isCorrect: true },
+            { answerText: 'Multiscale | Inner Focus', isCorrect: false },
+            { answerText: 'Competitive  | Marvel Scale', isCorrect: true },
+            { answerText: 'Cute charm | Serene Grace', isCorrect: false },
+            { answerText: 'Serene Grace | Natural Cure', isCorrect: false },
         ],
     },
     {
-        questionText: 'What nature is best for me?',
+        questionText: 'What does my ability marvel scale do?',
         answerOptions:[
-            { answerText: 'Jolly', isCorrect: false },
-            { answerText: 'Modest', isCorrect: false },
-            { answerText: 'Timid', isCorrect: true },
-            { answerText: 'Adamant', isCorrect: false },
+            { answerText: 'Makes my special defence 2X higher', isCorrect: false },
+            { answerText: 'Cuts the first damage done to me in half', isCorrect: false },
+            { answerText: '1.5x increase in defense if hit with a status condition', isCorrect: true },
+            { answerText: 'Powers up my Sp.Atack by 1.5x', isCorrect: false },
         ],
     },
     {
-        questionText: 'Who owns the only shiny dominevo?',
+        questionText: 'What move can I use to heal myself?',
         answerOptions:[
-            { answerText: 'Peels', isCorrect: false },
-            { answerText: 'SappDaddy', isCorrect: true },
-            { answerText: 'TheNamezAnthony', isCorrect: false },
-            { answerText: 'AmazaraJC', isCorrect: false },
+            { answerText: 'Recover', isCorrect: true },
+            { answerText: 'Softboiled', isCorrect: false },
+            { answerText: 'Synthesis', isCorrect: false },
+            { answerText: 'Heal pulse', isCorrect: false },
         ],
     },
     {
         questionText: 'What Move Hurts me the most?',
         answerOptions:[
-            { answerText: 'X-sizzors', isCorrect: true },
-            { answerText: 'Shadow Sneak', isCorrect: false },
-            { answerText: 'Flamethrower', isCorrect: false },
-            { answerText: 'Shadowball', isCorrect: false },
+            { answerText: 'Vine whip', isCorrect: false },
+            { answerText: 'Leaf storm', isCorrect: true },
+            { answerText: 'Grass Punch', isCorrect: false },
+            { answerText: 'Drain Punch', isCorrect: false },
         ],
     },
     {
         questionText: 'What type of attack(s) hurts me the most?',
         answerOptions:[
-            { answerText: 'Phantom/Fire/Earth', isCorrect: false },
-            { answerText: 'Bug/Water/Farts', isCorrect: false },
-            { answerText: 'Phantom/Bug/Twilight', isCorrect: true },
-            { answerText: 'Twilight/Battle', isCorrect: false },
+            { answerText: 'Spirit | Time', isCorrect: false },
+            { answerText: 'Water | Ice', isCorrect: false },
+            { answerText: 'Electric | Forrest', isCorrect: true },
+            { answerText: 'Battle | Forrest', isCorrect: false },
         ],
     },
-    {
-        questionText: 'Which move can I bounce back with my ability?',
-        answerOptions:[
-            { answerText: 'Phantom Type moves', isCorrect: false },
-            { answerText: 'Time Type moves', isCorrect: false },
-            { answerText: 'Priority Moves', isCorrect: false },
-            { answerText: 'Status moves/Stealth rock', isCorrect: true },
-        ],
-    },
-    {
-        questionText: 'What revomon did i evolve from?',
-        answerOptions:[
-            { answerText: 'Loftevo', isCorrect: false },
-            { answerText: 'None', isCorrect: true },
-            { answerText: 'Hauntevo', isCorrect: false },
-            { answerText: 'Drakevo', isCorrect: false },
-        ],
-    },
-    {
-        questionText: 'What are my highest stats?',
-        answerOptions:[
-            { answerText: 'SpDef/Atk', isCorrect: false },
-            { answerText: 'SpAtk/HP', isCorrect: false },
-            { answerText: 'Speed/SpAtk', isCorrect: true },
-            { answerText: 'SpD/Def', isCorrect: false },
-        ],
-    },
+
     
 
     ]
@@ -232,8 +233,8 @@ const DominevoQuiz = () => {
             fontSize: '30px',
             borderRadius: '10%',
             marginTop:'50px'
-        }}>Your level of Knowledge about Dominevo is  {knowledge}</h1>
-        <img src="https://nft.revomon.io/image/raw/revomon/196_shiny.png" className="Revomons" alt="logo" />
+        }}>Your level of Knowledge about Raftnesse is  {knowledge}</h1>
+        <img src="https://nft.revomon.io/image/raw/revomon/350_shiny.png" className="Revomons" alt="logo" />
         
         <Link to='/react-projects/'>
             <button
@@ -252,9 +253,9 @@ const DominevoQuiz = () => {
     return ( 
         <div className="body">
             
-            <h2 style={{marginTop:'20px'}}>Dominevo</h2>
+            <h2 style={{marginTop:'20px'}}>Raftnesse</h2>
             <div className="">
-               <img src="https://nft.revomon.io/image/raw/revomon/196_shiny.png" className="Revomons" alt="logo" /> 
+               <img src="https://nft.revomon.io/image/raw/revomon/350_shiny.png" className="Revomons" alt="logo" /> 
             </div>
 
             <div className="QuizPage">
@@ -306,4 +307,4 @@ const DominevoQuiz = () => {
      );
 }
  
-export default DominevoQuiz;
+export default RaftnesseQuiz;

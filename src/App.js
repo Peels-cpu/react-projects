@@ -16,6 +16,15 @@ import Raival from './Components/Raival';
 import Skadire from './Components/Skadire';
 import Soarnox from './Components/Soarnox';
 import Triplydra from './Components/Triplydra';
+import Azuroon from './Components/Azuroon';
+import Furnice from './Components/Furnice';
+import Leximinth from './Components/Leximinth';
+import Moomega from './Components/Moomega';
+import Murdoll from './Components/Murdoll';
+import Raftnesse from './Components/Raftnesse';
+import Revup from './Components/Revup';
+import Nightmort from './Components/Nightmort';
+import Spectreat from './Components/Spectreat';
 
 function App() {
   return (
@@ -24,58 +33,94 @@ function App() {
      <NavBar />
       <Switch>
 
-        <Route exact path="/">
+        <Route  path="/react-projects" exact component={Body}>
           <Body/>
         </Route>
 
-        <Route exact path="/Dominevo">
+        <Route  path="/react-projects/Dominevo" exact component={Dominevo}>
           <Dominevo/>
         </Route>
 
-        <Route exact path="/Romanfrig">
+        <Route exact path="/react-projects/Romanfrig">
           <Romanfrig/>
         </Route>
 
-        <Route exact path="/Khepreetle">
+        <Route exact path="/react-projects/Khepreetle">
           <Khepreetle/>
         </Route>
 
-        <Route exact path="/Meganeudra">
+        <Route exact path="/react-projects/Meganeudra">
           <Meganeudra/>
         </Route>
 
-        <Route exact path="/Monking">
+        <Route exact path="/react-projects/Monking">
           <Monking/>
         </Route>
 
-        <Route exact path="/Craggon">
+        <Route exact path="/react-projects/Craggon">
           <Craggon/>
         </Route>
 
-        <Route exact path="/Opawan">
+        <Route exact path="/react-projects/Opawan">
           <Opawan/>
         </Route>
 
-        <Route exact path="/Polluvern">
+        <Route exact path="/react-projects/Polluvern">
           <Polluvern/>
         </Route>
 
-        <Route exact path="/Raival">
+        <Route exact path="/react-projects/Raival">
           <Raival/>
         </Route>
 
-        <Route exact path="/Skadire">
+        <Route exact path="/react-projects/Skadire">
           <Skadire/>
         </Route>
 
-        <Route exact path="/Soarnox">
+        <Route exact path="/react-projects/Soarnox">
           <Soarnox/>
         </Route>
 
-        <Route exact path="/Triplydra">
+        <Route exact path="/react-projects/Triplydra">
           <Triplydra/>
         </Route>
+
+        <Route exact path="/react-projects/Azuroon">
+          <Azuroon/>
+        </Route>
+
+        <Route exact path="/react-projects/Furnice">
+          <Furnice/>
+        </Route>
+
+        <Route exact path="/react-projects/Leximinth">
+          <Leximinth/>
+        </Route>
+
+        <Route exact path="/react-projects/Moomega">
+          <Moomega/>
+        </Route>
+
+        <Route exact path="/react-projects/Murdoll">
+          <Murdoll/>
+        </Route>
+
+        <Route exact path="/react-projects/Raftnesse">
+          <Raftnesse/>
+        </Route>
+
+        <Route exact path="/react-projects/Revup">
+          <Revup/>
+        </Route>
+
+        <Route exact path="/react-projects/Nightmort">
+          <Nightmort/>
+        </Route>
         
+        <Route exact path="/react-projects/Spectreat">
+          <Spectreat/>
+        </Route>
+
       </Switch>
      <Footer />
     </div>

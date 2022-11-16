@@ -105,9 +105,32 @@ const RomanfrigQuiz = () => {
         const [question, questionChange] = useState(`Are you Ready?`);
         const [letsGo, disapear] = useState( <button className='Btn' onClick={() => startQuiz()}>Lets go!</button>)
         const [CurrentQuestion, setCurrentQuestion] = useState(0)
-    
         // Hides the questions and answers before lets go button is clicked.
         const [toggle, setToggle] = useState(false)
+        const [timer, setTimer] = useState(false)
+        // this componenet  is the timer for each question
+        const [count, setCount] = useState(10);
+    
+        useEffect(() => {
+            const interval = setInterval(() => {
+              setCount((count) => (count) -1);
+            }, 1000);
+            return () => (clearInterval(interval));
+          }, [CurrentQuestion]);
+    
+        //   This useeffect hook renders the next question when the timer hits zero
+        useEffect(() => {
+            if (count === 0) {
+                if (CurrentQuestion === Questions.length) {
+                    setCount(count => -10)
+                    console.log(count)
+                }else{
+                   answerButtonClick() 
+                }
+                
+            }
+            
+          }, );
     
     // The Score
     
@@ -116,21 +139,29 @@ const RomanfrigQuiz = () => {
         const answerButtonClick = (isCorrect ) => {
             if (isCorrect===true) {
                 setScore(score + 1);
-                
             };
             const nextQuestion = CurrentQuestion + 1;
             setCurrentQuestion(nextQuestion);
-            
+            // This resets the counter back to 10 after each question
+            if (count !== 10) {
+                setCount(count => 10)
+                
+            };
     
         };
     
-    // This function hides certain buttons
-        function startQuiz() {
+    
+    
+    // This function Starts the quiz when they click the button lets go
+        let startQuiz = () => {
             questionChange('');
-            disapear(``)
-            
-            setToggle(!toggle)
+            disapear('');
+            setToggle(!toggle);
+            setTimer(!timer);
+            setCount(count => 10);
         };
+    
+    
         let knowledge = '';
         if (score <= 2) {
              knowledge = <h2
@@ -181,91 +212,95 @@ const RomanfrigQuiz = () => {
             }}>Grand Master!</h2>
         };
     
+        
     
         if (CurrentQuestion === Questions.length) {
            
+            
+            
             return <div style={{
                 color: 'black',
                 backgroundColor: 'black',
                 fontSize: '17px',
                 borderRadius: '10%',
-                marginTop:'90px'
+                marginTop:'50px'
             }} className='body'><h2 >'You finished the quiz! your Score is {score} correct out of {Questions.length} Questions.'</h2><h1 style={{
                 color: 'white',
                 backgroundColor: 'black',
                 fontSize: '30px',
                 borderRadius: '10%',
-                marginTop:'70px'
-            }}>Your level of Knowledge about Romanfrig is <img src='https://nft.revomon.io/image/raw/revomon/398_shiny.png' className="Revomons" alt="logo" />  {knowledge}</h1>
+                marginTop:'50px'
+            }}>Your level of Knowledge about Romanfrig is  {knowledge}</h1>
+            <img src="https://nft.revomon.io/image/raw/revomon/398_shiny.png" className="Revomons" alt="logo" />
             
-            <Link to='/'>
+            <Link to='/react-projects/'>
                 <button
                 style={{
                     color: 'white',
                     background: 'linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))',
                     fontSize: '25px',
-                    // padding: '10px 20px',
-                    // margin: '20px',
-                    borderRadius: '10%'
+                    borderRadius: '10%',
+                    marginTop:'50px'
                 }}className='Btn'>Battle Different Revo</button>
             </Link>
             
             </div>
         };
     
-    return ( 
-        <div className="body">
-            
-            <h2 style={{margin:'20px'}}>Romanfrig</h2>
-            <div >
-               <img src='https://nft.revomon.io/image/raw/revomon/398_shiny.png' className="Revomons" alt="logo" /> 
-               
-            </div>
-
-            <div className="QuizPage">
-                {/* Questions */}
+        return ( 
+            <div className="body">
                 
-                <span>Question {CurrentQuestion + 1}</span>/{Questions.length}
-                {startQuiz}
-                <h3>{question}
-                    {toggle && (
-                    (Questions[CurrentQuestion].questionText)
-                )}
-                </h3>
-                {letsGo}
-
-                {/* Answer Buttons */}
-                <div className="AnswerBtns">
-                    {toggle && (
-                       
-                        (Questions[CurrentQuestion].answerOptions.map((answerOptions)=> 
-                        <button onClick={() => answerButtonClick(answerOptions.isCorrect)} className='Btn'>{answerOptions.answerText}</button>))
+                <h2 style={{marginTop:'20px'}}>Romanfrig</h2>
+                <div className="">
+                   <img src="https://nft.revomon.io/image/raw/revomon/398_shiny.png" className="Revomons" alt="logo" /> 
+                </div>
+    
+                <div className="QuizPage">
+                    {/* Question Amount and Timer*/}
+                    <span>Question {CurrentQuestion + 1}</span>/{Questions.length}
+                    {timer && (<h1>{count}</h1> )}
+                    {/* Start Quiz lets go button */}
+                    {startQuiz}
+                    
+                    {/* Questions */}
+                    <h3>
+                        {question}
+                        
+                        {toggle && (
+                            
+                        (Questions[CurrentQuestion].questionText)
                     )}
+                    </h3>
+                    {letsGo}
                     
-                    
-     
-
+                    {/* Answer Buttons */}
+                    <div className="AnswerBtns">
+                        {toggle && (
+                            
+                            
+                            (Questions[CurrentQuestion].answerOptions.map((answerOptions)=> 
+                            <button onClick={() => answerButtonClick(answerOptions.isCorrect)} className='Btn'>{answerOptions.answerText}</button>))
+                        )}
+                    </div>
                 </div>
-            </div>
-
-                        {/* Return to home page */}
+                        {/* Return home page button */}
                 <div>
-                    <Link to='/'>
-                        <button
-                        style={{
-                            color: 'white',
-                            background: 'linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))',
-                            fontSize: '25px',
-                            // padding: '10px 20px',
-                            // margin: '20px',
-                            borderRadius: '10%',
-                            marginTop:'50px'
-                        }}className='Btn'>Battle Different Revo</button>
-                    </Link>
+                <Link to='/react-projects/'>
+                    <button
+                    style={{
+                        color: 'white',
+                        background: 'linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))',
+                        fontSize: '25px',
+                        // padding: '10px 20px',
+                        // margin: '20px',
+                        borderRadius: '10%',
+                        marginTop:'50px'
+                    }}className='Btn'>Battle Different Revo</button>
+                </Link>
                 </div>
-                
-
-        </div>
+                    
+    
+            </div>
      );
 }
  

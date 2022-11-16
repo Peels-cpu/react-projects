@@ -4,101 +4,101 @@ import { Link } from 'react-router-dom';
 
 
 
-const DominevoQuiz = () => {
+const LeximinthQuiz = () => {
 
 
     const Questions = [
+        {
+            questionText: 'Which ones are my abilities?',
+            answerOptions:[
+                { answerText: 'Pankster | Pressure ', isCorrect: false },
+                { answerText: 'SoundProof | SolarPower', isCorrect: false },
+                { answerText: 'Flame Body | Drizzle', isCorrect: false },
+                { answerText: 'Prankster | Levitate', isCorrect: true },
+            ],
+        },
+        {
+            questionText: 'What is my Hidden Ability?',
+            answerOptions:[
+                { answerText: 'Prankster', isCorrect: false },
+                { answerText: 'Levitate', isCorrect: false },
+                { answerText: 'Soundproof', isCorrect: true },
+                { answerText: 'Pressure', isCorrect: false },
+            ],
+        },
+        {
+            questionText: 'What is my Atk Stat?',
+            answerOptions:[
+                { answerText: '140', isCorrect: false },
+                { answerText: 'Over 9000', isCorrect: false },
+                { answerText: '130', isCorrect: false },
+                { answerText: '120', isCorrect: true },
+            ],
+        },
+        {
+            questionText: 'What revomon did I previously evolve from?',
+            answerOptions:[
+                { answerText: 'Bookwyrm', isCorrect: true },
+                { answerText: 'Bouldorable', isCorrect: false },
+                { answerText: 'Turtlesleth', isCorrect: false },
+                { answerText: 'Polluvern', isCorrect: false },
+                
+            ],
+        },
+        {
+            questionText: 'What does my Ability Prankster Do?',
+            answerOptions:[
+                { answerText: 'It lets me Paralize revomon', isCorrect: false },
+                { answerText: 'Makes Twilight type moves have priority', isCorrect: false },
+                { answerText: 'If you dont give me candy ill...', isCorrect: false },
+                { answerText: 'It makes non-Damaging moves have +1 priority', isCorrect: true },
+            ],
+        },
     {
-        questionText: 'What town Can you catch me at and what time of the day?',
+        questionText: 'What priority move can I learn?',
         answerOptions:[
-            { answerText: 'Cinvia at Night', isCorrect: false },
-            { answerText: 'Kadric at night', isCorrect: false },
-            { answerText: 'Marquis at Afternoon', isCorrect: false },
-            { answerText: 'Kadric at Morning', isCorrect: true },
+            { answerText: 'I cant Learn priority moves', isCorrect: false },
+            { answerText: 'Quick Attack', isCorrect: false },
+            { answerText: 'Aqua Jet', isCorrect: false },
+            { answerText: 'Sucker Punch', isCorrect: true },
         ],
     },
     {
-        questionText: 'What revomon is your best option to fight me??',
+        questionText: 'What Town can you catch me at and what time?',
         answerOptions:[
-            { answerText: 'Opawan', isCorrect: true },
+            { answerText: 'Cinvia Morning', isCorrect: false },
+            { answerText: 'Cinvia Night', isCorrect: true },
+            { answerText: 'Cinvia Afternoon', isCorrect: false },
+            { answerText: 'In a library at night', isCorrect: false },
+        ],
+    },
+    {
+        questionText: 'What other revomon Has the same Attack Stat as me?',
+        answerOptions:[
+            { answerText: 'Kangcross', isCorrect: false },
+            { answerText: 'Skadire', isCorrect: true },
             { answerText: 'Azuroon', isCorrect: false },
-            { answerText: 'Nightmort', isCorrect: false },
-            { answerText: 'Blizzora', isCorrect: false },
-        ],
-    },
-    {
-        questionText: 'Which one is my ability?',
-        answerOptions:[
-            { answerText: 'Pressure', isCorrect: false },
-            { answerText: 'Shadow Tag', isCorrect: false },
-            { answerText: 'Dark aura', isCorrect: false },
-            { answerText: 'Magic Bounce', isCorrect: true },
-        ],
-    },
-    {
-        questionText: 'What nature is best for me?',
-        answerOptions:[
-            { answerText: 'Jolly', isCorrect: false },
-            { answerText: 'Modest', isCorrect: false },
-            { answerText: 'Timid', isCorrect: true },
-            { answerText: 'Adamant', isCorrect: false },
-        ],
-    },
-    {
-        questionText: 'Who owns the only shiny dominevo?',
-        answerOptions:[
-            { answerText: 'Peels', isCorrect: false },
-            { answerText: 'SappDaddy', isCorrect: true },
-            { answerText: 'TheNamezAnthony', isCorrect: false },
-            { answerText: 'AmazaraJC', isCorrect: false },
+            { answerText: 'Tidju', isCorrect: false },
         ],
     },
     {
         questionText: 'What Move Hurts me the most?',
         answerOptions:[
-            { answerText: 'X-sizzors', isCorrect: true },
-            { answerText: 'Shadow Sneak', isCorrect: false },
-            { answerText: 'Flamethrower', isCorrect: false },
-            { answerText: 'Shadowball', isCorrect: false },
+            { answerText: 'Toxic Spikes', isCorrect: false },
+            { answerText: 'Dazzling Gleam', isCorrect: true },
+            { answerText: 'Earthquake', isCorrect: false },
+            { answerText: 'Dark pulse', isCorrect: false },
         ],
     },
     {
         questionText: 'What type of attack(s) hurts me the most?',
         answerOptions:[
-            { answerText: 'Phantom/Fire/Earth', isCorrect: false },
-            { answerText: 'Bug/Water/Farts', isCorrect: false },
-            { answerText: 'Phantom/Bug/Twilight', isCorrect: true },
-            { answerText: 'Twilight/Battle', isCorrect: false },
+            { answerText: 'Toxic | Fire | Water', isCorrect: false },
+            { answerText: 'Spirit | Toxic | Metal', isCorrect: true },
+            { answerText: 'Metal | Stone | Sky', isCorrect: false },
+            { answerText: 'Ice | Fire | Battle', isCorrect: false },
         ],
     },
-    {
-        questionText: 'Which move can I bounce back with my ability?',
-        answerOptions:[
-            { answerText: 'Phantom Type moves', isCorrect: false },
-            { answerText: 'Time Type moves', isCorrect: false },
-            { answerText: 'Priority Moves', isCorrect: false },
-            { answerText: 'Status moves/Stealth rock', isCorrect: true },
-        ],
-    },
-    {
-        questionText: 'What revomon did i evolve from?',
-        answerOptions:[
-            { answerText: 'Loftevo', isCorrect: false },
-            { answerText: 'None', isCorrect: true },
-            { answerText: 'Hauntevo', isCorrect: false },
-            { answerText: 'Drakevo', isCorrect: false },
-        ],
-    },
-    {
-        questionText: 'What are my highest stats?',
-        answerOptions:[
-            { answerText: 'SpDef/Atk', isCorrect: false },
-            { answerText: 'SpAtk/HP', isCorrect: false },
-            { answerText: 'Speed/SpAtk', isCorrect: true },
-            { answerText: 'SpD/Def', isCorrect: false },
-        ],
-    },
-    
 
     ]
 
@@ -232,8 +232,8 @@ const DominevoQuiz = () => {
             fontSize: '30px',
             borderRadius: '10%',
             marginTop:'50px'
-        }}>Your level of Knowledge about Dominevo is  {knowledge}</h1>
-        <img src="https://nft.revomon.io/image/raw/revomon/196_shiny.png" className="Revomons" alt="logo" />
+        }}>Your level of Knowledge about Leximinth is  {knowledge}</h1>
+        <img src="https://nft.revomon.io/image/raw/revomon/861_shiny.png" className="Revomons" alt="logo" />
         
         <Link to='/react-projects/'>
             <button
@@ -252,9 +252,9 @@ const DominevoQuiz = () => {
     return ( 
         <div className="body">
             
-            <h2 style={{marginTop:'20px'}}>Dominevo</h2>
+            <h2 style={{marginTop:'20px'}}>Leximinth</h2>
             <div className="">
-               <img src="https://nft.revomon.io/image/raw/revomon/196_shiny.png" className="Revomons" alt="logo" /> 
+               <img src="https://nft.revomon.io/image/raw/revomon/861_shiny.png" className="Revomons" alt="logo" /> 
             </div>
 
             <div className="QuizPage">
@@ -306,4 +306,4 @@ const DominevoQuiz = () => {
      );
 }
  
-export default DominevoQuiz;
+export default LeximinthQuiz;

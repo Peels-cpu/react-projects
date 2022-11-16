@@ -151,7 +151,9 @@ border: rgb(219, 255, 16) inset ;
 }
 .RevomonIcons{
   /* Full height */
-  width: 80px;
+  width: auto;
+
+  max-height:90px;
   margin-right: 12px;
   /* Center and scale the image nicely */
   background-position: center;
